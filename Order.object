@@ -1,0 +1,1977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Order_Header_P_gina_de_registro1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ATR_change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cambio de ATR</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Autonomous_community__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Province__c, 
+&quot;01&quot;,&quot;País Vasco&quot;, 
+&quot;02&quot;,&quot;Castilla-La Mancha&quot;,
+&quot;03&quot;,&quot;Comunitat Valenciana&quot;,
+&quot;04&quot;,&quot;Andalucía&quot;,
+&quot;05&quot;,&quot;Castilla y León&quot;,
+&quot;06&quot;,&quot;Extremadura&quot;, 
+&quot;07&quot;,&quot;Balears, Illes&quot;, 
+&quot;08&quot;,&quot;Cataluña&quot;, 
+&quot;09&quot;,&quot;Castilla y León&quot;, 
+&quot;10&quot;,&quot;Extremadura&quot;, 
+&quot;11&quot;,&quot;Andalucía&quot;, 
+&quot;12&quot;,&quot;Comunitat Valenciana&quot;, 
+&quot;13&quot;,&quot;Castilla-La Mancha&quot;, 
+&quot;14&quot;,&quot;Andalucía&quot;, 
+&quot;15&quot;,&quot;Galicia&quot;, 
+&quot;16&quot;,&quot;Castilla-La Mancha&quot;, 
+&quot;17&quot;,&quot;Cataluña&quot;, 
+&quot;18&quot;,&quot;Andalucía&quot;, 
+&quot;19&quot;,&quot;Castilla-La Mancha&quot;, 
+&quot;20&quot;,&quot;País Vasco&quot;, 
+&quot;21&quot;,&quot;Andalucía&quot;,  
+&quot;22&quot;,&quot;Aragón&quot;, 
+&quot;23&quot;,&quot;Andalucía&quot;,   
+&quot;24&quot;,&quot;Castilla y León&quot;, 
+&quot;25&quot;,&quot;Cataluña&quot;,
+&quot;26&quot;,&quot;Rioja, La&quot;, 
+&quot;27&quot;,&quot;Galicia&quot;, 
+&quot;28&quot;,&quot;Madrid, Comunidad de&quot;,  
+&quot;29&quot;,&quot;Andalucía&quot;, 
+&quot;30&quot;,&quot;Murcia, Región de&quot;,   
+&quot;31&quot;,&quot;Navarra, Comunidad Foral de&quot;, 
+&quot;32&quot;,&quot;Galicia&quot;,    
+&quot;33&quot;,&quot;Asturias, Principado de&quot;,  
+&quot;34&quot;,&quot;Castilla y León&quot;, 
+&quot;35&quot;,&quot;Canarias&quot;,   
+&quot;36&quot;,&quot;Galicia&quot;, 
+&quot;37&quot;,&quot;Castilla y León&quot;, 
+&quot;38&quot;,&quot;Canarias&quot;, 
+&quot;39&quot;,&quot;Cantabria&quot;,  
+&quot;40&quot;,&quot;Castilla y León&quot;, 
+&quot;41&quot;,&quot;Andalucía&quot;,   
+&quot;42&quot;,&quot;Castilla y León&quot;, 
+&quot;43&quot;,&quot;Cataluña&quot;, 
+&quot;44&quot;,&quot;Aragón&quot;,   
+&quot;45&quot;,&quot;Castilla-La Mancha&quot;, 
+&quot;46&quot;,&quot;Comunitat Valenciana&quot;, 
+&quot;47&quot;,&quot;Castilla y León&quot;, 
+&quot;48&quot;,&quot;País Vasco&quot;,  
+&quot;49&quot;,&quot;Castilla y León&quot;, 
+&quot;50&quot;,&quot;Aragón&quot;,   
+&quot;51&quot;,&quot;Ceuta&quot;, 
+&quot;51&quot;,&quot;Melilla&quot;,
+&quot; &quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Comunidad autónoma</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>B2WExtCat__CheckElegibilityHeroku__c</fullName>
+        <deprecated>false</deprecated>
+        <description>EPC</description>
+        <externalId>false</externalId>
+        <formula>$Setup.B2WExtCat__SetElegHeroku__c.B2WExtCat__SetElegHeroku__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CheckElegibilityHeroku</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Profile__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Cuenta Comercial</label>
+        <referenceTo>B2C_Billing_Profile__c</referenceTo>
+        <relationshipLabel>Solicitudes</relationshipLabel>
+        <relationshipName>Solicitudes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Businessline__c</fullName>
+        <externalId>false</externalId>
+        <label>Línea de negocio</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>01</fullName>
+                    <default>false</default>
+                    <label>Electricidad</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>Gas</label>
+                </value>
+                <value>
+                    <fullName>04</fullName>
+                    <default>false</default>
+                    <label>PSVA</label>
+                </value>
+                <value>
+                    <fullName>03</fullName>
+                    <default>false</default>
+                    <label>STP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CNAE__c</fullName>
+        <externalId>false</externalId>
+        <label>CNAE</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CNAE_to_hire__c</fullName>
+        <externalId>false</externalId>
+        <label>CNAE a contratar</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CUPS__c</fullName>
+        <externalId>false</externalId>
+        <label>CUPS</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Caso</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Orders Header</relationshipLabel>
+        <relationshipName>Orders_Header</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Change_of_tension__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Currect_tension_type_cd__c,&apos;Trifásico&apos;) &amp;&amp; ISPICKVAL(Tension_type_cd__c,&apos;Trifásico&apos;) || ISPICKVAL(Currect_tension_type_cd__c,&apos;Monofásico&apos;) &amp;&amp; ISPICKVAL(Tension_type_cd__c,&apos;Monofásico&apos;),false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cambio de tensión</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Change_tension_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( TEXT(Currect_tension_type_cd__c) = TEXT(Tension_type_cd__c), false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cambio tipo de tensión</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Canal de entrada</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aliados</fullName>
+                    <default>false</default>
+                    <label>Aliados</label>
+                </value>
+                <value>
+                    <fullName>Canal digital</fullName>
+                    <default>false</default>
+                    <label>Canal digital</label>
+                </value>
+                <value>
+                    <fullName>Canales digitales asistidos</fullName>
+                    <default>false</default>
+                    <label>Canales digitales asistidos</label>
+                </value>
+                <value>
+                    <fullName>Canales presenciales</fullName>
+                    <default>false</default>
+                    <label>Canales presenciales</label>
+                </value>
+                <value>
+                    <fullName>CAT emisión</fullName>
+                    <default>false</default>
+                    <label>CAT emisión</label>
+                </value>
+                <value>
+                    <fullName>CAT recepción</fullName>
+                    <default>false</default>
+                    <label>CAT recepción</label>
+                </value>
+                <value>
+                    <fullName>CAT retención y fidelización</fullName>
+                    <default>false</default>
+                    <label>CAT retención y fidelización</label>
+                </value>
+                <value>
+                    <fullName>Colectivos</fullName>
+                    <default>false</default>
+                    <label>Colectivos</label>
+                </value>
+                <value>
+                    <fullName>Instaladores de gas</fullName>
+                    <default>false</default>
+                    <label>Instaladores de gas</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Taskforce</fullName>
+                    <default>false</default>
+                    <label>Taskforce</label>
+                </value>
+                <value>
+                    <fullName>AAFF</fullName>
+                    <default>false</default>
+                    <label>AAFF</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Check_self_consumption__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Self_consumption__c,&apos;Sin autoconsumo&apos;),false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Autoconsumo</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Company_owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Empresa titular</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>70</fullName>
+                    <default>false</default>
+                    <label>70</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>20</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Consumption__c</fullName>
+        <externalId>false</externalId>
+        <label>Consumo</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption_to_hire__c</fullName>
+        <externalId>false</externalId>
+        <label>Consumo a contratar</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Tarifa a contratar</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_TARIFA</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contract_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo contrato</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>01</fullName>
+                    <default>false</default>
+                    <label>General</label>
+                </value>
+                <value>
+                    <fullName>05</fullName>
+                    <default>false</default>
+                    <label>Autogenerador</label>
+                </value>
+                <value>
+                    <fullName>08</fullName>
+                    <default>false</default>
+                    <label>Socorro</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>Eventual con contador</label>
+                </value>
+                <value>
+                    <fullName>09</fullName>
+                    <default>false</default>
+                    <label>Eventual a tanto alzado</label>
+                </value>
+                <value>
+                    <fullName>03</fullName>
+                    <default>false</default>
+                    <label>Temporada</label>
+                </value>
+                <value>
+                    <fullName>07</fullName>
+                    <default>false</default>
+                    <label>Obra</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Critical_movement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Movimiento crítico</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Currect_tension_type_cd__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo tension actual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monofásico</fullName>
+                    <default>false</default>
+                    <label>Monofásico</label>
+                </value>
+                <value>
+                    <fullName>Trifásico</fullName>
+                    <default>false</default>
+                    <label>Trifásico</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_1_power__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia 1 actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_2_power__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia 2 actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_3_power__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia 3 actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_hourly_discrimination__c</fullName>
+        <externalId>false</externalId>
+        <label>Discriminación horaria actual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Con DH</fullName>
+                    <default>false</default>
+                    <label>Con DH</label>
+                </value>
+                <value>
+                    <fullName>Sin DH</fullName>
+                    <default>false</default>
+                    <label>Sin DH</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_measure_equipment_property__c</fullName>
+        <externalId>false</externalId>
+        <label>Propiedad equipo de medida actual</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_power_control_mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Modo control potencia actual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_MOD_CTL_POT</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Tarifa actual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_TARIFA</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_self_consumption_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo autoconsumo actual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_AUTOCONSUMO</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_tension__c</fullName>
+        <externalId>false</externalId>
+        <label>Tensión actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_tension_cd__c</fullName>
+        <externalId>false</externalId>
+        <label>Tensión/presión actual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_TENSION_PRES</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Data_model_efect__c</fullName>
+        <externalId>false</externalId>
+        <label>Modelo fecha efecto</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>05gas</fullName>
+                    <default>false</default>
+                    <label>A ciclo de lectura</label>
+                </value>
+                <value>
+                    <fullName>01</fullName>
+                    <default>true</default>
+                    <label>Activación a ciclo</label>
+                </value>
+                <value>
+                    <fullName>02</fullName>
+                    <default>false</default>
+                    <label>Activación a fecha fija</label>
+                </value>
+                <value>
+                    <fullName>04gas</fullName>
+                    <default>false</default>
+                    <label>Primer valor posible (1/11/21)</label>
+                </value>
+                <value>
+                    <fullName>03</fullName>
+                    <default>false</default>
+                    <label>Cuanto antes</label>
+                </value>
+                <value>
+                    <fullName>06gas</fullName>
+                    <default>false</default>
+                    <label>En fecha fija solicitada</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Debtor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deudor</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Distributor__c</fullName>
+        <externalId>false</externalId>
+        <label>Distribuidora</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_DISTRIBUIDORA_ELEC</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EEXXIContract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contrato E XXI</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EEcontract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contrato endese</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Electronicinvoice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Factura digital</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Facturation_period__c</fullName>
+        <externalId>false</externalId>
+        <label>Periodo facturacion</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Mensual</label>
+                </value>
+                <value>
+                    <fullName>Bimonthly</fullName>
+                    <default>true</default>
+                    <label>Bimestral</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Trimestral</label>
+                </value>
+                <value>
+                    <fullName>Biannual</fullName>
+                    <default>false</default>
+                    <label>Semestral</label>
+                </value>
+                <value>
+                    <fullName>Annual</fullName>
+                    <default>false</default>
+                    <label>Anual</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>First_Occupation__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( ISPICKVAL( Businessline__c , &apos;01&apos;)&amp;&amp;  PS__r.Name = &apos;PENDIENTE_INFORMAR&apos; &amp;&amp; ISBLANK(PS__r.Power_period_1_Kw__c) ,true, false)</formula>
+        <label>Primera Ocupación</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_discrimination_to_hire__c</fullName>
+        <externalId>false</externalId>
+        <label>Discriminación horaria a contratar</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Con DH</fullName>
+                    <default>false</default>
+                    <label>Con DH</label>
+                </value>
+                <value>
+                    <fullName>Sin DH</fullName>
+                    <default>false</default>
+                    <label>Sin DH</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Language_impression_invoice__c</fullName>
+        <externalId>false</externalId>
+        <label>Idioma impresión factura</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Español</fullName>
+                    <default>true</default>
+                    <label>Español</label>
+                </value>
+                <value>
+                    <fullName>Catalán</fullName>
+                    <default>false</default>
+                    <label>Catalán</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Main_product__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Product__c, &apos;SIACP&apos;) || ISPICKVAL(Product__c, &apos;SIACR&apos;) ||ISPICKVAL(Product__c, &apos;SICAR&apos;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Producto Principal</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Max_power__c</fullName>
+        <description>Get the maximum power of the three powers</description>
+        <externalId>false</externalId>
+        <formula>MAX( Power_period_1_kW__c ,  Power_period_2_kW__c ,  Power_period_3_kW__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Potencia máx</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_tension__c</fullName>
+        <description>Tension * 10k</description>
+        <externalId>false</externalId>
+        <formula>10000</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tensión máx</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measure_equipment_to_hire_property__c</fullName>
+        <externalId>false</externalId>
+        <label>Propiedad equipo de medida a Contratar</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NE__AccountId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Order3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NE__BillAccId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Payer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Orders Header (Billing Account)</relationshipLabel>
+        <relationshipName>Orders_Header_BillAcc</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NE__Catalog__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(NE__OrderId__r.NE__CatalogId__c, NE__OrderId__r.NE__CatalogId__r.Name, &apos;_top&apos; )</formula>
+        <label>Catalog</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NE__Configuration_Read_Only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Configuration Read Only</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NE__OrderId_Unique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>OrderId Unique</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>NE__OrderId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Order number</label>
+        <referenceTo>NE__Order__c</referenceTo>
+        <relationshipLabel>Orders Header</relationshipLabel>
+        <relationshipName>Orders_Header</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NE__OrderStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>Waiting for approval</fullName>
+                    <default>false</default>
+                    <label>Waiting for approval</label>
+                </value>
+                <value>
+                    <fullName>Revised</fullName>
+                    <default>false</default>
+                    <label>Revised</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NE__Order_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>NE__OrderId__r.NE__Order_date__c</formula>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>NE__Sales_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sales Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Electricity</fullName>
+                    <default>false</default>
+                    <label>Electricity</label>
+                </value>
+                <value>
+                    <fullName>Gas</fullName>
+                    <default>false</default>
+                    <label>Gas</label>
+                </value>
+                <value>
+                    <fullName>Dual Fuel</fullName>
+                    <default>false</default>
+                    <label>Dual Fuel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NE__ServAccId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Orders Header (User)</relationshipLabel>
+        <relationshipName>Orders_Header_ServAccId</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NE__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Disconnection</fullName>
+                    <default>false</default>
+                    <label>Disconnection</label>
+                </value>
+                <value>
+                    <fullName>InOrder</fullName>
+                    <default>false</default>
+                    <label>InOrder</label>
+                </value>
+                <value>
+                    <fullName>ChangeOrder</fullName>
+                    <default>false</default>
+                    <label>ChangeOrder</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Normalize_MCP1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Normaliza MCP1</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Normalize_distributor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Normaliza distribuidora</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Normalized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Normalizada</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OrderId__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Pedido</label>
+        <referenceTo>Order</referenceTo>
+        <relationshipLabel>Solicitudes</relationshipLabel>
+        <relationshipName>OrderItems</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderItemId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Original Order Product</label>
+        <referenceTo>OrderItem</referenceTo>
+        <relationshipLabel>Orders Header</relationshipLabel>
+        <relationshipName>ChildOrderItems</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Othercompany__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Otra comercializadora</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outgoing_marketing_company__c</fullName>
+        <externalId>false</externalId>
+        <label>Comercializadora saliente</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outgoing_marketing_company_informed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Comercializadora saliente informada</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ownership_change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cambio titular</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ownership_change_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo cambio titular</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Subtype__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>Alta y Baja Simultánea</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>Cambio Nombre+Condiciones ATR</label>
+                </value>
+                <value>
+                    <fullName>J</fullName>
+                    <default>false</default>
+                    <label>Cambio a su Nombre</label>
+                </value>
+                <value>
+                    <fullName>S</fullName>
+                    <default>false</default>
+                    <label>Subrogación</label>
+                </value>
+                <value>
+                    <fullName>T</fullName>
+                    <default>false</default>
+                    <label>Traspaso</label>
+                </value>
+                <value>
+                    <fullName>01</fullName>
+                    <default>false</default>
+                    <label>Cambio de Titular</label>
+                </value>
+                <value>
+                    <fullName>borrar</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>borrar</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CT</controllingFieldValue>
+                <controllingFieldValue>CC+CT</controllingFieldValue>
+                <controllingFieldValue>CCG+CT</controllingFieldValue>
+                <valueName>B</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CT</controllingFieldValue>
+                <controllingFieldValue>CC+CT</controllingFieldValue>
+                <controllingFieldValue>CCG+CT</controllingFieldValue>
+                <valueName>H</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CT</controllingFieldValue>
+                <controllingFieldValue>CC+CT</controllingFieldValue>
+                <controllingFieldValue>CCG+CT</controllingFieldValue>
+                <valueName>J</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CT</controllingFieldValue>
+                <controllingFieldValue>CC+CT</controllingFieldValue>
+                <controllingFieldValue>CCG+CT</controllingFieldValue>
+                <valueName>S</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CT</controllingFieldValue>
+                <controllingFieldValue>CC+CT</controllingFieldValue>
+                <controllingFieldValue>CCG+CT</controllingFieldValue>
+                <valueName>T</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PS__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Puntos de suministro</label>
+        <referenceTo>B2C_Service_Point__c</referenceTo>
+        <relationshipLabel>Orders Header</relationshipLabel>
+        <relationshipName>PSId2</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PSol_greater_PMA__c</fullName>
+        <externalId>false</externalId>
+        <formula>PS__r.Power_Max_APM__c &lt; Max_power__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PSol mayor PMA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Power_control_mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Modo control potencia a contratar</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_MOD_CTL_POT</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Power_max__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia máxima</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Power_period_1_kW__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Power_period_2_kW__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Power_period_3_kW__c</fullName>
+        <externalId>false</externalId>
+        <label>Potencia 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Print_mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Modo de Impresión</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Batch</fullName>
+                    <default>false</default>
+                    <label>Batch</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Producto destino</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SIAP</fullName>
+                    <default>false</default>
+                    <label>SIAP</label>
+                </value>
+                <value>
+                    <fullName>SIACR</fullName>
+                    <default>false</default>
+                    <label>SIACR</label>
+                </value>
+                <value>
+                    <fullName>SICAR</fullName>
+                    <default>false</default>
+                    <label>SICAR</label>
+                </value>
+                <value>
+                    <fullName>TEPLU</fullName>
+                    <default>false</default>
+                    <label>TEPLU</label>
+                </value>
+                <value>
+                    <fullName>TEAHO</fullName>
+                    <default>false</default>
+                    <label>TEAHO</label>
+                </value>
+                <value>
+                    <fullName>THE2D</fullName>
+                    <default>false</default>
+                    <label>THE2D</label>
+                </value>
+                <value>
+                    <fullName>TEG31</fullName>
+                    <default>false</default>
+                    <label>TEG31</label>
+                </value>
+                <value>
+                    <fullName>TEST</fullName>
+                    <default>false</default>
+                    <label>TEST</label>
+                </value>
+                <value>
+                    <fullName>AAON2</fullName>
+                    <default>false</default>
+                    <label>AAON2</label>
+                </value>
+                <value>
+                    <fullName>APLUS</fullName>
+                    <default>false</default>
+                    <label>APLUS</label>
+                </value>
+                <value>
+                    <fullName>PPAON</fullName>
+                    <default>false</default>
+                    <label>PPAON</label>
+                </value>
+                <value>
+                    <fullName>SPPW2</fullName>
+                    <default>false</default>
+                    <label>SPPW2</label>
+                </value>
+                <value>
+                    <fullName>SPPWL</fullName>
+                    <default>false</default>
+                    <label>SPPWL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Producto origen</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SIAP</fullName>
+                    <default>false</default>
+                    <label>SIAP</label>
+                </value>
+                <value>
+                    <fullName>SIACR</fullName>
+                    <default>false</default>
+                    <label>SIACR</label>
+                </value>
+                <value>
+                    <fullName>SICAR</fullName>
+                    <default>false</default>
+                    <label>SICAR</label>
+                </value>
+                <value>
+                    <fullName>TEPLU</fullName>
+                    <default>false</default>
+                    <label>TEPLU</label>
+                </value>
+                <value>
+                    <fullName>TEAHO</fullName>
+                    <default>false</default>
+                    <label>TEAHO</label>
+                </value>
+                <value>
+                    <fullName>THE2D</fullName>
+                    <default>false</default>
+                    <label>THE2D</label>
+                </value>
+                <value>
+                    <fullName>TEG31</fullName>
+                    <default>false</default>
+                    <label>TEG31</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Provincia</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Province</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QuoteLineItemId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Quote Line Item</label>
+        <referenceTo>QuoteLineItem</referenceTo>
+        <relationshipLabel>Orders Header</relationshipLabel>
+        <relationshipName>OrderItems</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contacto Relacionado</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Solicitudes</relationshipLabel>
+        <relationshipName>Solicitudes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Required_doc_pending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DocRequerida pdte</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Roles__c</fullName>
+        <externalId>false</externalId>
+        <label>Roles</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administrador de fincas</fullName>
+                    <default>false</default>
+                    <label>Administrador de fincas</label>
+                </value>
+                <value>
+                    <fullName>Apoderado</fullName>
+                    <default>false</default>
+                    <label>Apoderado</label>
+                </value>
+                <value>
+                    <fullName>Autorizado</fullName>
+                    <default>false</default>
+                    <label>Autorizado</label>
+                </value>
+                <value>
+                    <fullName>Autorizado para la venta.</fullName>
+                    <default>false</default>
+                    <label>Autorizado para la venta.</label>
+                </value>
+                <value>
+                    <fullName>Otros</fullName>
+                    <default>false</default>
+                    <label>Otros</label>
+                </value>
+                <value>
+                    <fullName>Representante de comunidad de vecinos</fullName>
+                    <default>false</default>
+                    <label>Representante de comunidad de vecinos</label>
+                </value>
+                <value>
+                    <fullName>Titular</fullName>
+                    <default>false</default>
+                    <label>Titular</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Self_consumption__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo autoconsumo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_AUTOCONSUMO</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Shipping_address__c</fullName>
+        <externalId>false</externalId>
+        <label>Dirección de envío</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_address_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo Dirección Envío</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BILL_MEDIA_TYPE</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Social_bonus__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Typebsocial__c)=&apos;&apos;,false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bono social</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Estado</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pendiente</label>
+                </value>
+                <value>
+                    <fullName>Locked quality</fullName>
+                    <default>false</default>
+                    <label>Bloqueada calidad</label>
+                </value>
+                <value>
+                    <fullName>Canceled_KO_Quality</fullName>
+                    <default>false</default>
+                    <label>Cancelada KO Calidad</label>
+                </value>
+                <value>
+                    <fullName>Validated OK</fullName>
+                    <default>false</default>
+                    <label>Validada OK</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subtype__c</fullName>
+        <externalId>false</externalId>
+        <label>Subtipo solicitud</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Subtype_action</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>CC+C</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>CC+CT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>CC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>CCG+C</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>CCG+CT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>AD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>A</controllingFieldValue>
+                <valueName>CCG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>M</controllingFieldValue>
+                <valueName>M</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>M</controllingFieldValue>
+                <valueName>CT</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Proveedor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Supplier_1</fullName>
+                    <default>false</default>
+                    <label>Proveedor 1</label>
+                </value>
+                <value>
+                    <fullName>Supplier_2</fullName>
+                    <default>false</default>
+                    <label>Proveedor 2</label>
+                </value>
+                <value>
+                    <fullName>Supplier_3</fullName>
+                    <default>false</default>
+                    <label>Proveedor 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tension__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Current_tension_cd__c , 
+&apos;01&apos;,220*10000,
+&apos;02&apos;,230*10000,
+&apos;03&apos;,380*10000,
+&apos;04&apos;,380*10000,
+&apos;05&apos;,400*10000,
+&apos;06&apos;,400*10000,
+&apos;07&apos;,127*10000,
+&apos;08&apos;,133*10000,
+&apos;09&apos;,220*10000,
+&apos;10&apos;,230*10000,
+&apos;11&apos;,220*10000,
+&apos;12&apos;,220*10000,
+&apos;13&apos;,230*10000,
+&apos;14&apos;,230*10000,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tension</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tension_cd__c</fullName>
+        <externalId>false</externalId>
+        <label>Tensión/presión a contratar</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_TENSION_PRES</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tension_type_cd__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo tension a contratar</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MONO</fullName>
+                    <default>false</default>
+                    <label>Monofásico</label>
+                </value>
+                <value>
+                    <fullName>Trifásico</fullName>
+                    <default>false</default>
+                    <label>Trifásico</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo solicitud</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>action_type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_gas_use__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo uso gas</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Combustible</fullName>
+                    <default>true</default>
+                    <label>Combustible</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_sale_channel__c</fullName>
+        <externalId>false</externalId>
+        <label>SubCanal</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_CNL_ENTRADA_NOM</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Typebsocial__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo bono social</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EV_TIPO_BSOCIAL</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Use_change__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(CNAE__c, 2)&lt;&gt;LEFT(CNAE_to_hire__c, 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cambio de uso</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Use_of_CC_Dir__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Usar Dirección CC</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Use_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>RIGHT(CNAE_to_hire__c, 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tipo de uso</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Validation_in_process__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Validación en proceso</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>aported_CIE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CIE Aportado</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>aported_CIG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CIG Aportado</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Order Header</label>
+    <listViews>
+        <fullName>NE__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Tutto</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ORH-{0000000000}</displayFormat>
+        <label>Nome Order Header</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Orders Header</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>RestrictionForValidation</fullName>
+        <active>true</active>
+        <description>Durante el proceso de validación, el usuario no puede actuar sobre la venta</description>
+        <errorConditionFormula>AND($User.Username &lt;&gt; $CustomMetadata.Global_Setting__mdt.Global_config.Integration_User__c,
+ISPICKVAL(Status__c, &quot;Locked quality&quot;),
+$User.Id !=   Case__r.Owner:User.Id , 
+NOT(ISCHANGED(Status__c)))</errorConditionFormula>
+        <errorMessage>Durante el proceso de validación, el usuario no puede actuar sobre la venta</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>NE__New_order</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New order</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!$Site.Prefix}/apex/NE__NewConfiguration?accId={!Account.Id}&amp;servAccId={!Account.Id}&amp;billAccId={!Account.Id}</url>
+    </webLinks>
+</CustomObject>
